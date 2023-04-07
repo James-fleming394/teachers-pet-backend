@@ -1,4 +1,4 @@
-const Test = require('../models/Test');
+const Test = require('../models/Tests');
 
 //Test
 
@@ -30,7 +30,7 @@ const getTestById = async (req, res) => {
 const createTest = async (req, res) => {
     try {
         const test = await Test.create(req.body)
-        res.send(users);
+        res.send(test);
     } catch (error) {
         res.status(500).send(error.message)
     }
@@ -65,7 +65,7 @@ const deleteTest = async (req, res) => {
 
 module.exports = {
     getAllTests,
-    getTestById
+    getTestById,
     createTest,
     updateTest,
     deleteTest

@@ -63,7 +63,7 @@ const deleteHomework = async (req, res) => {
 
 module.exports = {
     getAllHomework,
-    getHomeworkById
+    getHomeworkById,
     createHomework,
     updateHomework,
     deleteHomework

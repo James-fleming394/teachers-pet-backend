@@ -63,7 +63,7 @@ const deleteTech = async (req, res) => {
 
 module.exports = {
     getAllTech,
-    getTechById
+    getTechById,
     createTech,
     updateTech,
     deleteTech

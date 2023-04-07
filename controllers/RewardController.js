@@ -63,7 +63,7 @@ const deleteReward = async (req, res) => {
 
 module.exports = {
     getAllRewards,
-    getRewardById
+    getRewardById,
     createReward,
     updateReward,
     deleteReward

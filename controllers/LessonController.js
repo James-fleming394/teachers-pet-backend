@@ -63,7 +63,7 @@ const deleteLesson = async (req, res) => {
 
 module.exports = {
     getAllLesson,
-    getLessonById
+    getLessonById,
     createLesson,
     updateLesson,
     deleteLesson

@@ -1,14 +1,16 @@
 const mongoose = require("mongoose");
 const { Schema } = require("mongoose");
 
-const TechSchema = new Schema(
+const techSchema = new Schema(
     {
         subject: { type: String, required: true },
         plan: { type: String, required: true },
         img: { type: String, required: true },
         date: { type: String, required: true },
-    }
+    },
     { timestamps: true }
 )
 
-module.exports = mongoose.model("Tech": TechSchema);
+const Tech = mongoose.model('tech', techSchema);
+
+module.exports = Tech;

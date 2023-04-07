@@ -63,7 +63,7 @@ const deleteProject = async (req, res) => {
 
 module.exports = {
     getAllProject,
-    getProjectById
+    getProjectById,
     createProject,
     updateProject,
     deleteProject
