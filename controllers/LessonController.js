@@ -1,6 +1,6 @@
 const Lesson = require("../models/Lessons");
 
-// Project
+// Lesson
 
 const getAllLesson = async (req, res) => {
     try {
