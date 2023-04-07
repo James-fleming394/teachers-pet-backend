@@ -1,6 +1,6 @@
 const Reward = require("../models/Reward");
 
-// Tech
+// Reward
 
 const getAllRewards = async (req, res) => {
     try {
