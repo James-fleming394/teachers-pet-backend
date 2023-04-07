@@ -1,4 +1,4 @@
-const Test = require('../models/User');
+const Test = require('../models/Test');
 
 //Test
 
