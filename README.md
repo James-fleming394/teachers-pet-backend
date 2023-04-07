@@ -35,14 +35,6 @@ Teacher's Pet is a CRUD application that allows teacher's to view, input, update
 
 ## [Deployed Site]()
 
-### ![Home Page]()
-### ![Products Page]()
-### ![Comics Page]()
-### ![Toys Page]()
-### ![Apparel Page]()
-### ![Update Page Page]()
-### ![Cart Page]()
-
 
 # Credits 
 
