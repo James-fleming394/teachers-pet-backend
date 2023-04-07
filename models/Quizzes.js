@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const { Schema } = require("mongoose");
 
-const TestSchema = new Schema(
+const QuizSchema = new Schema(
     {
         subject: { type: String, required: true },
         unit: { type: String, required: true },
@@ -11,4 +11,4 @@ const TestSchema = new Schema(
     { timestamps: true }
 )
 
-module.exports = mongoose.model("Test": TestSchema);
+module.exports = mongoose.model("Quiz": QuizSchema);
