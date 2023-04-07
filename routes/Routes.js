@@ -1,9 +1,12 @@
 const express = require("express");
 const router = express.Router();
-const controllers = require('../controllers/TestController')
-const controller = require('../controllers/TechController')
-const control = require('../controllers/RewardController')
-const controls = require('../controllers/')
+const controllers = require('../controllers/TestController');
+const controller = require('../controllers/TechController');
+const control = require('../controllers/RewardController');
+const controls = require('../controllers/QuizController');
+const controlss = require('../controllers/ProjectController');
+const controlsss = require('../controllers/LessonController');
+const controlssss = require('../controllers/HomeworkController');
 
 router.get('/', (req, res) => {
     res.send('Root page route functional')
@@ -32,6 +35,38 @@ router.get('/reward/:id', control.getRewardById)
 router.post('/reward', control.createReward)
 router.put('/reward/:id', control.updateReward)
 router.delete('/reward/:id', control.deleteReward)
+
+// Quiz
+
+router.get('/reward', controls.getAllQuiz)
+router.get('/reward/:id', controls.getQuizById)
+router.post('/reward', controls.createQuiz)
+router.put('/reward/:id', controls.updateQuiz)
+router.delete('/reward/:id', controls.deleteQuiz)
+
+// Project
+
+router.get('/project', controlss.getAllProject)
+router.get('/project/:id', controlss.getProjectById)
+router.post('/project', controlss.createProject)
+router.put('/project/:id', controlss.updateProject)
+router.delete('/project/:id', controlss.deleteProject)
+
+// Lesson
+
+router.get('/lesson', controlsss.getAllLesson)
+router.get('/lesson/:id', controlsss.getLessonById)
+router.post('/lesson', controlsss.createLesson)
+router.put('/lesson/:id', controlsss.updateLesson)
+router.delete('/lesson/:id', controlsss.deleteLesson)
+
+// Homework
+
+router.get('/homework', controlssss.getAllHomework)
+router.get('/homework/:id', controlssss.getHomeworkById)
+router.post('/homework', controlssss.createHomework)
+router.put('/homework/:id', controlssss.updateHomework)
+router.delete('/homework/:id', controlssss.deleteHomework)
 
 
 module.exports = router;
