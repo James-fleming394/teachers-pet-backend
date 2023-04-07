@@ -5,7 +5,7 @@ const db = require("./db");
 const routes = require("./routes/Routes");
 
 const app = express();
-const PORT = process.env.PORT || 7004;
+const PORT = process.env.PORT || 7006;
 
 app.use(cors());
 app.use(express.json());

@@ -38,11 +38,11 @@ router.delete('/reward/:id', control.deleteReward)
 
 // Quiz
 
-router.get('/reward', controls.getAllQuiz)
-router.get('/reward/:id', controls.getQuizById)
-router.post('/reward', controls.createQuiz)
-router.put('/reward/:id', controls.updateQuiz)
-router.delete('/reward/:id', controls.deleteQuiz)
+router.get('/quiz', controls.getAllQuiz)
+router.get('/quiz/:id', controls.getQuizById)
+router.post('/quiz', controls.createQuiz)
+router.put('/quiz/:id', controls.updateQuiz)
+router.delete('/quiz/:id', controls.deleteQuiz)
 
 // Project
 
