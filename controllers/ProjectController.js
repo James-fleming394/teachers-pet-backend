@@ -1,6 +1,6 @@
 const Project = require("../models/Project");
 
-// Quiz
+// Project
 
 const getAllProject = async (req, res) => {
     try {
