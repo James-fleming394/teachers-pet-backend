@@ -17,7 +17,7 @@ const getAllTests = async (req, res) => {
 const getTestById = async (req, res) => {
     try {
         const { id } = req.params;
-        const toy = await Test.findById(id)
+        const test = await Test.findById(id)
     if (test) {
         return res.status(200).json({ test })
     }
@@ -29,7 +29,7 @@ const getTestById = async (req, res) => {
 
 const createTest = async (req, res) => {
     try {
-        const users = await Test.create(req.body)
+        const test = await Test.create(req.body)
         res.send(users);
     } catch (error) {
         res.status(500).send(error.message)
