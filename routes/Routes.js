@@ -14,35 +14,35 @@ router.get('/', (req, res) => {
 
 // Test
 
-router.get('/tests', controllers.getAllTests)
-router.get('/tests/:id', controllers.getTestById)
-router.post('/tests', controllers.createTest)
-router.put('/tests/:id', controllers.updateTest)
-router.delete('/tests/:id', controllers.deleteTest)
+router.get('/assessments/tests', controllers.getAllTests)
+router.get('/assessments/tests/:id', controllers.getTestById)
+router.post('/assessments/tests', controllers.createTest)
+router.put('/assessments/tests/:id', controllers.updateTest)
+router.delete('/assessments/tests/:id', controllers.deleteTest)
 
 // Tech
 
-router.get('/tech', controller.getAllTech)
-router.get('/tech/:id', controller.getTechById)
-router.post('/tech', controller.createTech)
-router.put('/tech/:id', controller.updateTech)
-router.delete('/tech/:id', controller.deleteTech)
+router.get('/technology', controller.getAllTech)
+router.get('/technology/:id', controller.getTechById)
+router.post('/technology', controller.createTech)
+router.put('/technology/:id', controller.updateTech)
+router.delete('/technology/:id', controller.deleteTech)
 
 // Reward
 
-router.get('/reward', control.getAllRewards)
-router.get('/reward/:id', control.getRewardById)
-router.post('/reward', control.createReward)
-router.put('/reward/:id', control.updateReward)
-router.delete('/reward/:id', control.deleteReward)
+router.get('/rewards', control.getAllRewards)
+router.get('/rewards/:id', control.getRewardById)
+router.post('/rewards', control.createReward)
+router.put('/rewards/:id', control.updateReward)
+router.delete('/rewards/:id', control.deleteReward)
 
 // Quiz
 
-router.get('/quiz', controls.getAllQuiz)
-router.get('/quiz/:id', controls.getQuizById)
-router.post('/quiz', controls.createQuiz)
-router.put('/quiz/:id', controls.updateQuiz)
-router.delete('/quiz/:id', controls.deleteQuiz)
+router.get('/assessments/quizzes', controls.getAllQuiz)
+router.get('/assessments/quizzes/:id', controls.getQuizById)
+router.post('/assessments/quizzes', controls.createQuiz)
+router.put('/assessments/quizzes/:id', controls.updateQuiz)
+router.delete('/assessments/quizzes/:id', controls.deleteQuiz)
 
 // Project
 
@@ -54,11 +54,11 @@ router.delete('/project/:id', controlss.deleteProject)
 
 // Lesson
 
-router.get('/lesson', controlsss.getAllLesson)
-router.get('/lesson/:id', controlsss.getLessonById)
-router.post('/lesson', controlsss.createLesson)
-router.put('/lesson/:id', controlsss.updateLesson)
-router.delete('/lesson/:id', controlsss.deleteLesson)
+router.get('/lessons', controlsss.getAllLesson)
+router.get('/lessons/:id', controlsss.getLessonById)
+router.post('/lessons', controlsss.createLesson)
+router.put('/lessons/:id', controlsss.updateLesson)
+router.delete('/lessons/:id', controlsss.deleteLesson)
 
 // Homework
 
